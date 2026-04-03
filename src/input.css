@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@import "flowbite/src/themes/default";
+@import "flowbite/src/themes/default";
+
+@source "../node_modules/flowbite";
+
+@theme {
+   --color-primary: #009E60;
+   --color-secondary: #00d07e;
+   --color-dark: #004526;
+   --color-primary-gradient: #d7ffef;
+   --color-secondary-gradient: #cfffec;
+   
+}

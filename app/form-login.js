@@ -14,7 +14,9 @@ togglePassword.addEventListener("click", function () {
 
 submit.addEventListener("click", function () {
 if (password.value != "!#$%^&*") {
-    window.location.href = "home.html";
+    window.location.href = "home.html";}
+else if (password.value === "" ) {
+    alert("password tidak boleh kosong")
 } else {
     alert("password tidak boleh !#$%^&*")
 }

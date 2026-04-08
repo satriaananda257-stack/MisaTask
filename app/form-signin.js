@@ -25,7 +25,9 @@ toggleConfirmPassword.addEventListener("click", function () {
 
 submit.addEventListener("click", function () {
 if (password.value === confirmPassword.value) {
-    window.location.href = "home.html";
+    window.location.href = "home.html";}
+else if (password.value === "" ||  confirmPassword.value === "") {
+    alert("password tidak boleh kosong")
 } else {
     alert("password tidak sesuai")
 }

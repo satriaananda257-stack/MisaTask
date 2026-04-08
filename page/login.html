@@ -8,80 +8,130 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap"
-      rel="stylesheet"/>
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/feather-icons"></script>
     <link rel="icon" type="image/x-icon" href="../images/Logo.png" />
     <title>MisaTask</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    
-<body class="font-[poppins] flex flex-row min-h-screen">
+  </head>
   
-<div class="flex flex-1 justify-center items-center">
-<aside class="group relative overflow-hidden select-none">
-  <img src="../images/Logo-pin.png"
-       class="absolute w-80 h-auto">
-  <img src="../images/Logo-clock.png"
-       class="w-80 h-auto transition duration-1000 group-hover:rotate-180">
-</aside>
-</div>
+  <body class="font-[poppins] flex flex-row min-h-screen">
+    <div class="flex flex-1 justify-center items-center">
+      <aside>
+        <img src="../images/Logo-pin.png" class="absolute w-80 h-auto" />
+        <img
+          src="../images/Logo-clock.png"
+          class="w-80 h-auto transition duration-1000 group-hover:rotate-180"
+        />
+      </aside>
+    </div>
 
-  <main class="flex flex-1 flex-col bg-primary text-white rounded-s-4xl min-h-screen">
-    <section class="flex flex-1 flex-col relative px-8 py-24 h-full gap-8 justify-center">
-        <button
+    <main
+      class="flex flex-1 flex-col bg-primary text-white rounded-s-4xl min-h-screen"
+    >
+      <section
+        class="flex flex-1 flex-col relative px-8 py-24 h-full gap-8 justify-center"
+      >
+        <!-- <button
           class="left-btn top-6 left-6 p-2 rounded-full absolute bg-white hover:opacity-75 duration-300 ease-out cursor-pointer"
           onclick="">
           <a href="Landingpage.html"> <i data-feather="arrow-left" class="w-8 h-auto text-primary"></i></a>
-        </button>
+        </button> -->
 
-      <header class="flex">
-        <h1 class="text-3xl font-semibold">Welcome Back</h1>
-      </header> 
+        <header class="flex">
+          <h1 class="text-3xl font-semibold">Welcome Back</h1>
+        </header>
 
-      <form class="flex flex-col gap-6">
+        <form class="flex flex-col gap-6">
+          <div>
+            <label for="email" class="block mb-2.5 text-sm font-medium"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="bg-neutral-secondary-medium text-black text-sm rounded-sm focus:ring-brand focus border-brand block w-full px-2.5 py-2 shadow-xs"
+              placeholder=""
+              required
+            />
+          </div>
 
-      <div>
-              <label for="email" class="block mb-2.5 text-sm font-medium">Email Address</label>
-              <input type="email" id="email" class="bg-neutral-secondary-medium text-black text-sm rounded-sm focus:ring-brand focus border-brand block w-full px-2.5 py-2 shadow-xs" placeholder="" required />
-      </div>
+          <div class="relative">
+            <label for="password" class="block mb-2.5 text-sm font-medium"
+              >Password</label
+            >
+            <input
+              type="password"
+              id="password"
+              class="bg-neutral-secondary-medium text-black text-sm rounded-sm focus:ring-brand focus:border-brand block w-full px-2.5 py-2 shadow-xs"
+              placeholder=""
+              required
+            />
+            <button
+              type="button"
+              id="togglePassword"
+              class="absolute right-3 top-1/2 text-primary"
+            >
+              <i data-feather="eye-off"></i>
+            </button>
+          </div>
 
-      <div class="relative">
-              <label for="password" class="block mb-2.5 text-sm font-medium">Password</label>
-              <input type="password" id="password" class="bg-neutral-secondary-medium text-black text-sm rounded-sm focus:ring-brand focus:border-brand block w-full px-2.5 py-2 shadow-xs" placeholder="" required />
-              <button type="button" id="togglePassword" class="absolute right-3 top-1/2 text-primary">
-                <i data-feather="eye-off" ></i>
-              </button>
-      </div>
+          <button
+            type="button"
+            id="submit_toggle"
+            class="bg-dark p-2 rounded-sm"
+          >
+            Sign In
+          </button>
 
-      <button type="submit" class="bg-dark p-2 rounded-sm">Sign Up</button>
+          <div
+            class="flex justify-center items-center item-center h-0.5 bg-white"
+          >
+            <p class="bg-primary inline-block px-4 weight-0.5">OR</p>
+          </div>
 
-        <div class="flex justify-center items-center item-center h-0.5 bg-white">
-          <p class="bg-primary inline-block px-4 weight-0.5">OR</p>
-        </div>
+          <div class="flex flex-row gap-8 justify-center">
+            <a
+              href=""
+              class="flex justify-center gap-2.5 bg-white text-black py-2 px-3 rounded-sm"
+            >
+              <iconify-icon
+                icon="logos:google-icon"
+                class="text-xl"
+              ></iconify-icon>
+              <p>Continue with Google</p>
+            </a>
+            <a
+              href=""
+              class="flex justify-center gap-2.5 bg-white text-black py-2 px-3 rounded-sm"
+            >
+              <iconify-icon
+                icon="logos:facebook"
+                class="text-xl"
+              ></iconify-icon>
+              <p>Continue with Facebook</p>
+            </a>
+          </div>
 
-
-        <div class="flex flex-row gap-8 justify-center">
-          <a href="" class="flex justify-center gap-2.5 bg-white text-black py-2 px-3 rounded-sm">
-            <iconify-icon icon="logos:google-icon" class="text-xl"></iconify-icon>
-            <p>Continue with Google</p>
-          </a>
-          <a href="" class="flex justify-center gap-2.5 bg-white text-black py-2 px-3 rounded-sm">
-            <iconify-icon icon="logos:facebook" class="text-xl"></iconify-icon>
-            <p>Continue with Facebook</p>
-          </a>
-        </div>
-
-          <p class="text-center">Already have an account?
-          <a href="signup.html" class="underline font-semibold">Sign Up here</a></p>
-
-      </form>
-    </section>
-  </main>
+          <p class="text-center">
+            Already have an account?
+            <a href="/page/signup.html" class="underline font-semibold"
+              >Sign Up here</a
+            >
+          </p>
+        </form>
+      </section>
+    </main>
 
     <script>
       feather.replace();
     </script>
-    <script src="../app/form.js"></script>
+    <script src="../app/form-login.js" defer></script>
     <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
-</body>
+  </body>
 </html>

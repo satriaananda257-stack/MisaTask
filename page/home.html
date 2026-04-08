@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth scroll-pt-6">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../src/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="icon" type="image/x-icon" href="../images/Logo.png" />
+    <title>MisaTask</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </head>
+
+  <body class="font-[poppins] flex flex-row min-h-screen min-w-screen">
+    <aside
+      class="flex flex-col min-w-32 bg-primary min-h-full items-center list-none justify-between gap-10 pt-10"
+    >
+      <header class="items-center">
+        <img src="../images/logo-white.png" class="w-18 h-auto" alt="logo" />
+      </header>
+
+      <nav class="h-full w-full">
+        <ul class="flex w-full flex-col items-center text-4xl">
+          <li
+            class="w-full text-center py-2 bg-white duration-300 ease-out cursor-pointer text-primary"
+          >
+            <a href="#"><iconify-icon icon="mdi:home"></iconify-icon></a>
+          </li>
+          <li
+            class="w-full text-center py-2 text-white hover:bg-white duration-300 ease-out cursor-pointer hover:text-primary"
+          >
+            <a href="#"
+              ><iconify-icon icon="solar:clipboard-bold"></iconify-icon
+            ></a>
+          </li>
+          <li
+            class="w-full text-center py-2 text-white hover:bg-white duration-300 ease-out cursor-pointer hover:text-primary"
+          >
+            <a href="#"
+              ><iconify-icon icon="material-symbols:folder"></iconify-icon
+            ></a>
+          </li>
+          <li
+            class="w-full text-center py-2 text-white hover:bg-white duration-300 ease-out cursor-pointer hover:text-primary"
+          >
+            <a href="#"
+              ><iconify-icon icon="mdi:account-multiple"></iconify-icon
+            ></a>
+          </li>
+          <li
+            class="w-full text-center py-2 text-white hover:bg-white duration-300 ease-out cursor-pointer hover:text-primary"
+          >
+            <a href="#"><iconify-icon icon="mdi:account"></iconify-icon></a>
+          </li>
+        </ul>
+      </nav>
+
+      <footer class="flex items-center w-full text-4xl pb-3 hover:bg-white">
+        <a
+          href="#"
+          class="flex justify-center items-center w-full py-3 text-white hover:bg-white hover:text-primary transition-all duration-300 cursor-pointer"
+        >
+          <iconify-icon icon="mdi:cog"></iconify-icon>
+        </a>
+      </footer>
+    </aside>
+
+    <main class="w-full bg-white-secondary">
+      <header class="flex flex-row w-full justify-between items-center">
+        <h1>Good Morning, John Doe!</h1>
+
+        <div class="flex">
+          <button onclick="">
+            <a href=""
+              ><iconify-icon icon="ion:notifications"></iconify-icon
+            ></a>
+          </button>
+
+          <picture
+            class="flex bg-white rounded-full w-18 h-auto overflow-hidden"
+          >
+            <img src="../images/male-student.png" alt="User profile" />
+          </picture>
+        </div>
+      </header>
+
+      <section class="flex flex-col items-center bg-white">
+        <header>
+          <h2>Overview</h2>
+        </header>
+
+        <div class="flex flex-row gap-10">
+          <article>
+            <h1>Ongoing</h1>
+            <p id="ongoing">11</p>
+          </article>
+
+          <article>
+            <h3>Done</h3>
+            <p id="ongoing">8</p>
+          </article>
+
+          <article>
+            <h3>Overdue</h3>
+            <p id="ongoing">4</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <nav class="">
+          <ul class="flex flex-row gap-5">
+            <li>All Tasks</li>
+            <li>Ongoing</li>
+            <li>Overdue</li>
+            <li>Done</li>
+          </ul>
+        </nav>
+
+        <section>
+          <header>
+            <h1>today</h1>
+          </header>
+
+          <article class="flex flex-row">
+            <input type="checkbox" />
+            <p>Task #1</p>
+            <button>⭐</button>
+          </article>
+        </section>
+
+        <section>
+          <h3>Yesterday</h3>
+
+          <article class="flex flex-row">
+            <input type="checkbox" />
+            <p>Task name</p>
+            <button>⭐</button>
+          </article>
+
+          <article class="flex flex-row">
+            <input type="checkbox" />
+            <p>Task name</p>
+            <button>⭐</button>
+          </article>
+        </section>
+      </section>
+
+      <button aria-label="Add Task">
+        <a href=""><iconify-icon icon="boxicons:plus-filled"></iconify-icon></a>
+      </button>
+    </main>
+
+    <script>
+      feather.replace();
+    </script>
+    <script src="../app/form.js"></script>
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+  </body>
+</html>

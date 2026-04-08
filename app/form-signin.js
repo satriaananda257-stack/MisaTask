@@ -1,6 +1,6 @@
 const password = document.getElementById("password");
 const confirmPassword = document.getElementById("confirmPassword");
-const sumbit = document.getElementById("sumbit_toggle");
+const submit = document.getElementById("submit");
 
 const togglePassword = document.getElementById("togglePassword");
 const toggleConfirmPassword = document.getElementById("toggleConfirmPassword");
@@ -23,9 +23,9 @@ toggleConfirmPassword.addEventListener("click", function () {
     : feather.icons["eye"].toSvg();
 });
 
-sumbit.addEventListener("click", function () {
+submit.addEventListener("click", function () {
 if (password.value === confirmPassword.value) {
-    window.location.href = "login.html";
+    window.location.href = "home.html";
 } else {
     alert("password tidak sesuai")
 }

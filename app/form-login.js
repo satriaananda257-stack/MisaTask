@@ -12,12 +12,13 @@ togglePassword.addEventListener("click", function () {
     : feather.icons["eye"].toSvg();
 });
 
-submit.addEventListener("click", function () {
-if (password.value != "!#$%^&*") {
-    window.location.href = "home.html";}
-else if (password.value === "" ) {
-    alert("password tidak boleh kosong")
-} else {
-    alert("password tidak boleh !#$%^&*")
-}
+submit.addEventListener("click", function (event) {
+  event.preventDefault();
+  if (password.value === "") {
+    alert("password tidak boleh kosong");
+  } else if (/[!#$%^&*]/.test(password.value)) {
+    alert("password tidak boleh mengandung !#$%^&*");
+  } else {
+    window.location.href = "home.html"
+  }
 });
